@@ -36,7 +36,7 @@ void closing(int z)
 	i = close(z);
 	if (i == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close z %d\n", z);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", z);
 		exit(100);
 	}
 }
